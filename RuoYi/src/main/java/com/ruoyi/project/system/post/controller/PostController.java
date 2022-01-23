@@ -44,7 +44,7 @@ public class PostController extends BaseController
     @PostMapping("/list")
     @ResponseBody
     public TableDataInfo list(Post post)
-    {
+    {	//这是gao-gam的代码
         startPage();
         List<Post> list = postService.selectPostList(post);
         return getDataTable(list);
