@@ -45,7 +45,7 @@ public class PostController extends BaseController
     @ResponseBody
     public TableDataInfo list(Post post)
     {	//这是gao-gam的代码
-		//邮箱是wll09837347@163.com
+		//邮箱是wll09837347
         startPage();
         List<Post> list = postService.selectPostList(post);
         return getDataTable(list);
