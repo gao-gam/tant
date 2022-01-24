@@ -46,6 +46,7 @@ public class PostController extends BaseController
     public TableDataInfo list(Post post)
     {	//这是gao-gam的代码
 		//最新密码是w-l-l960298...
+		//电子邮件是wll09837347
         startPage();
         List<Post> list = postService.selectPostList(post);
         return getDataTable(list);
