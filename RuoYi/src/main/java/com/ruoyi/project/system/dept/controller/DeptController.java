@@ -47,7 +47,7 @@ public class DeptController extends BaseController
     @ResponseBody
     public List<Dept> list(Dept dept)
 
-    {	//部门信息表
+    {	//这是dept表
 		List<Dept> deptList = deptService.selectDeptList(dept);
         return deptList;
     }
