@@ -46,7 +46,7 @@ public class NoticeController extends BaseController
     @PostMapping("/list")
     @ResponseBody
     public TableDataInfo list(Notice notice)
-    {
+    {	//这是notice列表
         startPage();
         List<Notice> list = noticeService.selectNoticeList(notice);
         return getDataTable(list);
