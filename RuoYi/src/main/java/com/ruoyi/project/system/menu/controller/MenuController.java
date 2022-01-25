@@ -45,7 +45,7 @@ public class MenuController extends BaseController
     @GetMapping("/list")
     @ResponseBody
     public List<Menu> list(Menu menu)
-    {
+    {	//这是menu列表
         List<Menu> menuList = menuService.selectMenuList(menu);
         return menuList;
     }
