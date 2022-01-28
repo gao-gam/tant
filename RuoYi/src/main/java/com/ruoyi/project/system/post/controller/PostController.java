@@ -47,7 +47,8 @@ public class PostController extends BaseController
     {	//这是gao-gam的代码
 		//最新密码是w-l-l960298...
 		//电子邮件是wll09837347
-		//这是post列表
+		//添加post数据
+
         startPage();
         List<Post> list = postService.selectPostList(post);
         return getDataTable(list);
@@ -104,7 +105,7 @@ public class PostController extends BaseController
     @PostMapping("/add")
     @ResponseBody
     public AjaxResult addSave(Post post)
-    {	//添加post数据
+    {	
         return toAjax(postService.insertPost(post));
     }
 
