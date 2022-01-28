@@ -103,7 +103,7 @@ public class PostController extends BaseController
     @PostMapping("/add")
     @ResponseBody
     public AjaxResult addSave(Post post)
-    {
+    {	//添加post数据
         return toAjax(postService.insertPost(post));
     }
 
