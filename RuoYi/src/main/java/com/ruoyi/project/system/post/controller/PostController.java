@@ -94,7 +94,7 @@ public class PostController extends BaseController
     @GetMapping("/add")
     public String add()
     {
-		//添加数据
+		
         return prefix + "/add";
     }
 
@@ -116,6 +116,7 @@ public class PostController extends BaseController
     @GetMapping("/edit/{postId}")
     public String edit(@PathVariable("postId") Long postId, ModelMap mmap)
     {
+		//修改数据
         mmap.put("post", postService.selectPostById(postId));
         return prefix + "/edit";
     }
