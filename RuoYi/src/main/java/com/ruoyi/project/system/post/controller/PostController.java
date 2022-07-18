@@ -117,6 +117,7 @@ public class PostController extends BaseController
     public String edit(@PathVariable("postId") Long postId, ModelMap mmap)
     {
 		//修改数据
+		//更新内容
         mmap.put("post", postService.selectPostById(postId));
         return prefix + "/edit";
     }
