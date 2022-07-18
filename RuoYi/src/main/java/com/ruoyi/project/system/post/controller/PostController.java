@@ -119,6 +119,7 @@ public class PostController extends BaseController
 		//修改数据
 		//更新内容
 		//修改页面
+		//更新页面
         mmap.put("post", postService.selectPostById(postId));
         return prefix + "/edit";
     }
