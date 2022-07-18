@@ -94,6 +94,7 @@ public class PostController extends BaseController
     @GetMapping("/add")
     public String add()
     {
+		//添加数据
         return prefix + "/add";
     }
 
