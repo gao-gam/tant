@@ -143,7 +143,7 @@ public class PostController extends BaseController
     @ResponseBody
     public String checkPostNameUnique(Post post)
     {
-        return postService.checkPostNameUnique(post);
+		return postService.checkPostNameUnique(post);
     }
 
     /**
