@@ -133,8 +133,7 @@ public class PostController extends BaseController
     @ResponseBody
     public AjaxResult editSave(Post post)
     {
-		//修改保存数据
-        return toAjax(postService.updatePost(post));
+		return toAjax(postService.updatePost(post));
     }
 
     /**
