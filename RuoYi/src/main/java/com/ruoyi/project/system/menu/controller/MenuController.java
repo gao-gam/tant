@@ -100,6 +100,7 @@ public class MenuController extends BaseController
     @ResponseBody
     public AjaxResult addSave(Menu menu)
     {
+		//添加菜单数据
         return toAjax(menuService.insertMenu(menu));
     }
 
