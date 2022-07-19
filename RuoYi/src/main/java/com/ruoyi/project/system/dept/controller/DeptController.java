@@ -71,7 +71,7 @@ public class DeptController extends BaseController
     @ResponseBody
     public AjaxResult addSave(Dept dept)
     {
-        return toAjax(deptService.insertDept(dept));
+		return toAjax(deptService.insertDept(dept));
     }
 
     /**
