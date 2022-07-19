@@ -135,6 +135,7 @@ public class PostController extends BaseController
     {
 		//修改保存数据
         return toAjax(postService.updatePost(post));
+
     }
 
     /**
