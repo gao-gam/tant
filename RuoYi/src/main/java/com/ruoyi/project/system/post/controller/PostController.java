@@ -44,12 +44,10 @@ public class PostController extends BaseController
     @PostMapping("/list")
     @ResponseBody
     public TableDataInfo list(Post post)
-    {	//这是gao-gam的代码
-		//最新密码是w-l-l960298...
-		//电子邮件是wll09837347
-		//添加post数据
-
-        startPage();
+	{	
+		//这是gao-gam的数据
+		//这是sxt的数据
+		startPage();
         List<Post> list = postService.selectPostList(post);
         return getDataTable(list);
     }
@@ -116,11 +114,7 @@ public class PostController extends BaseController
     @GetMapping("/edit/{postId}")
     public String edit(@PathVariable("postId") Long postId, ModelMap mmap)
     {
-		//修改数据
-		//更新内容
-		//修改页面
-		//更新页面
-        mmap.put("post", postService.selectPostById(postId));
+		mmap.put("post", postService.selectPostById(postId));
         return prefix + "/edit";
     }
 
@@ -133,8 +127,7 @@ public class PostController extends BaseController
     @ResponseBody
     public AjaxResult editSave(Post post)
     {
-		//修改保存数据
-        return toAjax(postService.updatePost(post));
+		return toAjax(postService.updatePost(post));
 
     }
 
