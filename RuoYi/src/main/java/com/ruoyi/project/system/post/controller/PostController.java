@@ -48,6 +48,7 @@ public class PostController extends BaseController
 		//最新密码是w-l-l960298...
 		//电子邮件是wll09837347
 		//添加post数据
+		//这是gao-gam的数据
         startPage();
         List<Post> list = postService.selectPostList(post);
         return getDataTable(list);
