@@ -47,8 +47,10 @@ public class PostController extends BaseController
     {	
 		//这是gao-gam的数据
 		//这是sxt的数据
-		startPage();
-        List<Post> list = postService.selectPostList(post);
+		//这是gao-gam更改的
+		//这是sxt更改的
+        startPage();
+		List<Post> list = postService.selectPostList(post);
         return getDataTable(list);
     }
 
