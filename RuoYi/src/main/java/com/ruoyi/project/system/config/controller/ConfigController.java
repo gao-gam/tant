@@ -48,7 +48,7 @@ public class ConfigController extends BaseController
     @ResponseBody
     public TableDataInfo list(Config config)
     {
-        startPage();
+		startPage();
         List<Config> list = configService.selectConfigList(config);
         return getDataTable(list);
     }
