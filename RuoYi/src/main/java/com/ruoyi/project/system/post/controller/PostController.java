@@ -50,6 +50,7 @@ public class PostController extends BaseController
 		//这是gao-gam更改的
 		//这是sxt更改的
     	//这是post列表--
+    	//这是postList表格
         startPage();
 		List<Post> list = postService.selectPostList(post);
         return getDataTable(list);
